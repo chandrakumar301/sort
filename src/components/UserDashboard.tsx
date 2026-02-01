@@ -219,8 +219,8 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
     
     if (isMobile) {
       // On mobile: Try deep links
-      const phonepeLink = `phonepe://pay?pa=7019574818@ybl&pn=EdFund&am=${paymentAmount}&tn=Loan%20Payment&tr=EDFUND${Date.now()}`;
-      const upiLink = `upi://pay?pa=7019574818@ybl&pn=EdFund&am=${paymentAmount}&tn=Loan%20Payment&tr=EDFUND${Date.now()}`;
+      const phonepeLink = `phonepe://pay?pa=yadavchandrakumar@axl&pn=EdFund&am=${paymentAmount}&tn=Loan%20Payment&tr=EDFUND${Date.now()}`;
+      const upiLink = `upi://pay?pa=yadavchandrakumar@axl&pn=EdFund&am=${paymentAmount}&tn=Loan%20Payment&tr=EDFUND${Date.now()}`;
       
       window.location.href = phonepeLink;
       
@@ -230,7 +230,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
       }, 1500);
     } else {
       // On desktop: Copy UPI ID and provide PhonePe link
-      navigator.clipboard.writeText("7019574818@ybl");
+      navigator.clipboard.writeText("yadavchandrakumar@axl");
       toast.success(
         `Amount: ₹${paymentAmount}\n\nUPI ID copied!\n\nOption 1: Paste in PhonePe app (on phone)\nOption 2: Click "Open PhonePe Website" below`,
         { duration: 5000 }
@@ -539,7 +539,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
                 <span className="font-medium">Recipient:</span> EdFund Loans
               </p>
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium">UPI ID:</span> <span className="font-mono text-foreground">7019574818@ybl</span>
+                <span className="font-medium">UPI ID:</span> <span className="font-mono text-foreground">yadavchandrakumar@axl</span>
               </p>
               <p className="text-sm text-muted-foreground">
                 <span className="font-medium">Phone:</span> <span className="font-mono text-foreground">7019574818</span>
@@ -550,7 +550,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
           <div className="space-y-2">
             <Button 
               onClick={() => {
-                navigator.clipboard.writeText("7019574818@ybl");
+                navigator.clipboard.writeText("yadavchandrakumar@axl");
                 toast.success("UPI ID copied! Paste it in PhonePe app");
               }}
               className="w-full h-12 bg-purple-600 hover:bg-purple-700 text-white text-base font-semibold"
