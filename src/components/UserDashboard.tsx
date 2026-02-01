@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Textarea } from "@/components/ui/textarea";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Search, Loader2, Clock, Check, X, Banknote, IndianRupee, ArrowLeft, FileText, Mail, Phone, MessageCircle, ExternalLink, Plus, CreditCard } from "lucide-react";
+import { Search, Loader2, Clock, Check, X, Banknote, IndianRupee, ArrowLeft, FileText, Mail, Phone, ExternalLink, Plus, CreditCard } from "lucide-react";
 import type { Database } from "@/integrations/supabase/types";
 
 type LoanRequest = Database["public"]["Tables"]["loan_requests"]["Row"];
@@ -604,41 +604,6 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
             </Button>
             <a href="tel:7019574818" className="text-center text-sm text-orange-700 dark:text-orange-300 hover:underline block">
               7019574818
-            </a>
-          </CardContent>
-        </Card>
-
-        {/* Messaging Card */}
-        <Card className="shadow-md border-0 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-950 dark:to-green-900">
-          <CardHeader>
-            <CardTitle className="text-lg flex items-center gap-2">
-              <MessageCircle className="w-5 h-5 text-green-600" />
-              Send Message
-            </CardTitle>
-            <CardDescription>Message via WhatsApp</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <Button 
-              asChild 
-              className="w-full h-11 bg-green-600 hover:bg-green-700 text-white"
-            >
-              <a 
-                href="https://wa.me/917019574818?text=Hi%20EdFund,%20I%20need%20help%20with%20my%20loan%20application." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Chat on WhatsApp
-              </a>
-            </Button>
-            <a 
-              href="https://wa.me/917019574818?text=Hi%20EdFund,%20I%20need%20help%20with%20my%20loan%20application." 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-center text-sm text-green-700 dark:text-green-300 hover:underline block flex items-center justify-center gap-1"
-            >
-              <ExternalLink className="w-3 h-3" /> Open WhatsApp
             </a>
           </CardContent>
         </Card>

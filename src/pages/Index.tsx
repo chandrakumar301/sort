@@ -3,10 +3,11 @@ import { LoanApplicationForm } from "@/components/LoanApplicationForm";
 import { AdminLogin } from "@/components/AdminLogin";
 import { AdminDashboard } from "@/components/AdminDashboard";
 import { UserDashboard } from "@/components/UserDashboard";
+import { HowItWorks } from "@/components/HowItWorks";
 import { Button } from "@/components/ui/button";
-import { Banknote, Shield, Search } from "lucide-react";
+import { Banknote, Shield, Search, Info } from "lucide-react";
 
-type View = "apply" | "track" | "admin-login" | "admin-dashboard";
+type View = "apply" | "track" | "admin-login" | "admin-dashboard" | "how-it-works";
 
 const Index = () => {
   const [currentView, setCurrentView] = useState<View>("apply");
@@ -52,6 +53,16 @@ const Index = () => {
                 Track Loan
               </Button>
             )}
+            {currentView !== "how-it-works" && (
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => setCurrentView("how-it-works")}
+              >
+                <Info className="w-4 h-4 mr-2" />
+                How It Works
+              </Button>
+            )}
             {currentView === "apply" && (
               <Button 
                 variant="ghost" 
@@ -94,6 +105,19 @@ const Index = () => {
 
         {currentView === "admin-login" && (
           <AdminLogin onLogin={handleAdminLogin} onBack={() => setCurrentView("apply")} />
+        )}
+
+        {currentView === "how-it-works" && (
+          <div className="w-full">
+            <Button 
+              variant="ghost" 
+              onClick={() => setCurrentView("apply")}
+              className="mb-4"
+            >
+              ← Back
+            </Button>
+            <HowItWorks />
+          </div>
         )}
       </main>
 
