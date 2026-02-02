@@ -593,15 +593,15 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
             <CardDescription>Reach us directly</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Button 
+            {/* <Button 
               asChild 
               className="w-full h-11 bg-orange-600 hover:bg-orange-700 text-white"
             >
-              <a href="tel:7019574818" className="flex items-center justify-center gap-2">
+              <a href="" className="flex items-center justify-center gap-2">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-            </Button>
+            </Button> */}
             <a href="tel:9573297146" className="text-center text-sm text-orange-700 dark:text-orange-300 hover:underline block">
               9573297146
             </a>
