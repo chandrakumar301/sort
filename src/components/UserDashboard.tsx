@@ -523,7 +523,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
       )}
 
       {/* Payment Section */}
-      <Card className="shadow-md border-0 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900">
+      {/* <Card className="shadow-md border-0 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950 dark:to-indigo-900">
         <CardHeader>
           <CardTitle className="text-lg flex items-center gap-2">
             <CreditCard className="w-5 h-5 text-blue-600" />
@@ -539,10 +539,10 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
                 <span className="font-medium">Recipient:</span> EdFund Loans
               </p>
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium">UPI ID:</span> <span className="font-mono text-foreground">yadavchandrakumar@axl</span>
+                <span className="font-medium">UPI ID:</span> <span className="font-mono text-foreground">************@axl</span>
               </p>
               <p className="text-sm text-muted-foreground">
-                <span className="font-medium">Phone:</span> <span className="font-mono text-foreground">7019574818</span>
+                <span className="font-medium">Phone:</span> <span className="font-mono text-foreground">**********8</span>
               </p>
             </div>
           </div>
@@ -550,7 +550,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
           <div className="space-y-2">
             <Button 
               onClick={() => {
-                navigator.clipboard.writeText("yadavchandrakumar@axl");
+                navigator.clipboard.writeText("********@axl");
                 toast.success("UPI ID copied! Paste it in PhonePe app");
               }}
               className="w-full h-12 bg-purple-600 hover:bg-purple-700 text-white text-base font-semibold"
@@ -578,8 +578,8 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
             📱 Mobile: Click "Copy & Pay in PhonePe" and paste UPI ID in PhonePe app<br/>
             🖥️ Desktop: Use PhonePe website or ask your admin for payment link
           </p>
-        </CardContent>
-      </Card>
+        </CardContent> */}
+      {/* </Card> */}
 
       {/* Contact & Messaging Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -602,8 +602,8 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
                 Call Now
               </a>
             </Button>
-            <a href="tel:7019574818" className="text-center text-sm text-orange-700 dark:text-orange-300 hover:underline block">
-              7019574818
+            <a href="tel:9573297146" className="text-center text-sm text-orange-700 dark:text-orange-300 hover:underline block">
+              9573297146
             </a>
           </CardContent>
         </Card>
