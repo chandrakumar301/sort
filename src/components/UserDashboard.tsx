@@ -497,6 +497,7 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
                             <CreditCard className="w-4 h-4 mr-2" />
                             Pay ₹{Number(request.amount) + 10}
                           </Button> */}
+                          <p>Copy The below Number and pay Amount Via phone pay displayed here</p>
                         </div>
                       )}
                     </div>
