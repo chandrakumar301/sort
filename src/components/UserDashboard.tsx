@@ -490,13 +490,13 @@ export const UserDashboard = ({ onBack, onApplyNew, initialMobile = "" }: UserDa
                               })()}
                             </div>
                           </div>
-                          <Button
+                          {/* <Button
                             onClick={() => handlePaymentClick(Number(request.amount))}
                             className="w-full h-9 bg-orange-600 hover:bg-orange-700 text-white text-sm"
                           >
                             <CreditCard className="w-4 h-4 mr-2" />
                             Pay ₹{Number(request.amount) + 10}
-                          </Button>
+                          </Button> */}
                         </div>
                       )}
                     </div>
